@@ -1,4 +1,13 @@
-class HideWindow
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.InteropServices;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace YourProgram
+{
+    class HideWindow
     {
         [DllImport("Kernel32.dll")]
         private static extern IntPtr GetConsoleWindow();
@@ -41,3 +50,4 @@ class HideWindow
             }
         }
     }
+}
